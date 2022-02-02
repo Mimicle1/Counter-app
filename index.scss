@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(44, 18, 18);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 22, 17);
+    border: 5px solid gray ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 ;
+    flex-wrap: wrap;
+    
+    
+   
+}
+.h1{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(66, 5, 90);
+    color: Green;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 1;
+
+    
+}
+.counter{
+    font-size:10em;
+    color: silver;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 40px;
+    // width: 50%;
+    margin-top: 10%;
+    gap: 40px;
+    padding: 5%;
+    background-color: black;
+    
+}
+.increment-btn{
+    background-color: green;
+    color:red;
+    height: 20px;
+    width: 40px;
+    
+    
+}
+@media all and(max-width: 300px) {
+        .counter{
+            font-size: 3em;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+        }
+        .h1{
+            font-size: 2em;
+            z-index: -1;
+            
+            
+        }
+        .main{
+            background-color: rgb(24, 5, 24);
+            
+        }
+}
+@media all and(max-width: 200px) {
+    .h1{
+            font-size: 1rem;
+            font-weight: bolder;
+            color: red;
+
+    }
+    .body{
+        background-color: rgb(85, 81, 81);
+        
+    }
+    .counter{
+        color:red;
+    }
+    
+}
